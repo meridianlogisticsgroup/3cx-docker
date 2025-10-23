@@ -17,7 +17,9 @@ services:
       - /run/lock
     volumes:
       - voip:/mnt/voip
-      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      - /sys/fs/cgroup:/sys/fs/cgroup
+    ulimits:
+      nofile: 100000
     ports:
       - "5015:5015"
       - "5060:5060"
