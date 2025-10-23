@@ -7,9 +7,9 @@ services:
     restart: unless-stopped
     tty: true 
     environment: # these variables are optional and used by the auto restore feature (https://github.com/izer-xyz/3cx-docker/issues/3)
-      - CX_BACKUP_FILE=/mnt/voip/backups/3CXScheduledBackup.zip
-      - CX_PUBLIC_IP=X.X.X.X
-      - CX_INTERNAL_FQDN=voip.example.com
+      #- CX_BACKUP_FILE=/mnt/voip/backups/3CXScheduledBackup.zip
+      #- CX_PUBLIC_IP=X.X.X.X
+      #- CX_INTERNAL_FQDN=voip.example.com
     tmpfs:
       - /tmp/
       - /run/
