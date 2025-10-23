@@ -5,7 +5,8 @@ services:
   voip:
     image: ghcr.io/izer-xyz/3cx:latest
     restart: unless-stopped
-    tty: true 
+    tty: true
+    priveleged: true
     #environment: # these variables are optional and used by the auto restore feature (https://github.com/izer-xyz/3cx-docker/issues/3)
       #- CX_BACKUP_FILE=/mnt/voip/backups/3CXScheduledBackup.zip
       #- CX_PUBLIC_IP=X.X.X.X
